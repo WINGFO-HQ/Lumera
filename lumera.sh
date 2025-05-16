@@ -58,9 +58,8 @@ install_node() {
 
   print_yellow "Downloading and installing Lumera binary..."
   cd $HOME
-  curl -LO https://github.com/LumeraProtocol/lumera/releases/download/v0.4.1/lumera_v0.4.1_linux_amd64.tar.gz
-  tar -xvf lumera_v0.4.1_linux_amd64.tar.gz
-  rm lumera_v0.4.1_linux_amd64.tar.gz
+  curl -LO https://github.com/LumeraProtocol/lumera/releases/download/v1.0.1/lumera_v1.0.1_linux_amd64.tar.gz
+  rm lumera_v1.0.1_linux_amd64.tar.gz
   [ -f install.sh ] && rm install.sh
   sudo mv libwasmvm.x86_64.so /usr/lib/
   chmod +x lumerad
